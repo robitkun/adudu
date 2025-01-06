@@ -1,0 +1,59 @@
+# POST http://localhost:5000/api/users/register
+# Content-Type: application/json
+
+# {
+#     "username": "putra",
+#     "email": "putra@gmail.com",
+#     "password": "putra1234",
+#     "role": "ADMIN"
+# }
+
+
+
+# POST http://localhost:5000/api/users/login
+# Content-Type: application/json
+
+# {
+#     "email": "putra@gmail.com",
+#     "password": "putra1234"
+# }
+
+# GET http://localhost:5000/api/users/me
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijc3ZDczYTRhLTkzN2QtNGM2NC04OGUxLTc0ZDllMWZjMjQwZiIsInVzZXJuYW1lIjoicHV0cmEiLCJlbWFpbCI6InB1dHJhQGdtYWlsLmNvbSIsImF2YXRhcl91cmwiOm51bGwsInJvbGUiOiJBRE1JTiIsImNyZWF0ZWRfYXQiOiIyMDI0LTEyLTI4VDAzOjI4OjQzLjAwMVoiLCJpYXQiOjE3MzUzNTY2MTEsImV4cCI6MTczNTM2MDIxMX0.j6S08QYgZ8sFcLd38XN4iWDnspEr-0PHtDdD_3C0cc4
+
+
+# GET  http://localhost:5000/api/users/0d17a865-d253-4692-a7a9-a59c2e03a0bd
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBkMTdhODY1LWQyNTMtNDY5Mi1hN2E5LWE1OWMyZTAzYTBiZCIsInVzZXJuYW1lIjoibWFpbCIsImVtYWlsIjoibWFpbEBnbWFpbC5jb20iLCJhdmF0YXJfdXJsIjpudWxsLCJyb2xlIjoiQURNSU4iLCJjcmVhdGVkX2F0IjoiMjAyNC0xMi0yM1QxOTozNjo0NS40NzlaIiwiaWF0IjoxNzM1MDA4NzIyLCJleHAiOjE3MzUwMTIzMjJ9.7rOCq-5AwOSor2Ymx9qQFAflSlvnoxOfKMJzDxV6OyI
+
+# POST http://localhost:5000/api/forums/create
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijc3ZDczYTRhLTkzN2QtNGM2NC04OGUxLTc0ZDllMWZjMjQwZiIsInVzZXJuYW1lIjoicHV0cmEiLCJlbWFpbCI6InB1dHJhQGdtYWlsLmNvbSIsImF2YXRhcl91cmwiOm51bGwsInJvbGUiOiJBRE1JTiIsImNyZWF0ZWRfYXQiOiIyMDI0LTEyLTI4VDAzOjI4OjQzLjAwMVoiLCJpYXQiOjE3MzUzNTY2MTEsImV4cCI6MTczNTM2MDIxMX0.j6S08QYgZ8sFcLd38XN4iWDnspEr-0PHtDdD_3C0cc4
+# Content-Type: application/json
+
+# {
+#     "title" : "Forum COBA",
+#     "content" : "Content COBA"
+# }
+
+# GET http://localhost:5000/api/forums
+
+# DELETE http://localhost:5000/api/forums/delete/5bc83671-d285-4add-9751-cd2b7ad5c1d4
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBkMTdhODY1LWQyNTMtNDY5Mi1hN2E5LWE1OWMyZTAzYTBiZCIsInVzZXJuYW1lIjoibWFpbCIsImVtYWlsIjoibWFpbEBnbWFpbC5jb20iLCJhdmF0YXJfdXJsIjpudWxsLCJyb2xlIjoiQURNSU4iLCJjcmVhdGVkX2F0IjoiMjAyNC0xMi0yM1QxOTozNjo0NS40NzlaIiwiaWF0IjoxNzM1MDA4NzIyLCJleHAiOjE3MzUwMTIzMjJ9.7rOCq-5AwOSor2Ymx9qQFAflSlvnoxOfKMJzDxV6OyI
+
+# PUT http://localhost:5000/api/forums/edit/bef86695-e225-4702-83c2-96b3e049f976
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBkMTdhODY1LWQyNTMtNDY5Mi1hN2E5LWE1OWMyZTAzYTBiZCIsInVzZXJuYW1lIjoibWFpbCIsImVtYWlsIjoibWFpbEBnbWFpbC5jb20iLCJhdmF0YXJfdXJsIjpudWxsLCJyb2xlIjoiQURNSU4iLCJjcmVhdGVkX2F0IjoiMjAyNC0xMi0yM1QxOTozNjo0NS40NzlaIiwiaWF0IjoxNzM1MDE4NTg4LCJleHAiOjE3MzUwMjIxODh9.jy_I8lFRZ3GqftV0dDQuUa_7sMEwcPg-kJGrT2cvrn0
+# Content-Type: application/json
+
+# {
+#     "title" : "Forum edit",
+#     "content" : "Content edit"
+# }
+
+# POST http://localhost:5000/api/comment/create
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijc3ZDczYTRhLTkzN2QtNGM2NC04OGUxLTc0ZDllMWZjMjQwZiIsInVzZXJuYW1lIjoicHV0cmEiLCJlbWFpbCI6InB1dHJhQGdtYWlsLmNvbSIsImF2YXRhcl91cmwiOm51bGwsInJvbGUiOiJBRE1JTiIsImNyZWF0ZWRfYXQiOiIyMDI0LTEyLTI4VDAzOjI4OjQzLjAwMVoiLCJpYXQiOjE3MzUzNTY2MTEsImV4cCI6MTczNTM2MDIxMX0.j6S08QYgZ8sFcLd38XN4iWDnspEr-0PHtDdD_3C0cc4
+# Content-Type: application/json
+
+#  {
+#      "content" :"Comment COBA",
+#      "forum_id" : "19d15793-4515-4cfb-80b8-2627f132eb4e"
+#  }
+GET http://localhost:5000/api/event
